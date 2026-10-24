@@ -552,13 +552,16 @@ code {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: -0.05em;
-  line-height: 0.92;
-  font-size: clamp(2.4rem, 13.6vw, 13rem);
+  line-height: 0.9;
+  font-size: clamp(3rem, 16vw, 18rem);
+  width: 100%;
   max-width: 100%;
 }
 
 .hero__giant-row {
   display: flex;
+  justify-content: center;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -1734,6 +1737,19 @@ code {
   .hero__im-a-text {
     font-size: 2rem;
   }
+  .hero__giant {
+    font-size: 16vw;
+    letter-spacing: -0.06em;
+    line-height: 0.88;
+    width: 100%;
+  }
+  .hero__giant-row {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__title {
+    font-size: clamp(2.2rem, 11vw, 5.4rem);
+  }
   .hero__type {
     font-size: 0.78rem;
     letter-spacing: 0.14em;
@@ -1890,6 +1906,19 @@ code {
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 359px) {
+  .hero__giant {
+    font-size: 14.6vw;
+    letter-spacing: -0.07em;
+  }
+  .hero__title {
+    font-size: clamp(2rem, 12vw, 4.8rem);
+  }
+  .hero__im-a-text {
+    font-size: 1.8rem;
   }
 }
 
